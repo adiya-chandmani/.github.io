@@ -1,77 +1,294 @@
-h3{
-    left: 89px;
-    text-align: center;
-   
-    line-height: 0px;
-}
-.a{
-    height: 180px;
-  
-}
-a:hover{
-    background-color: lightslategrey;
-    transition: 0.25s;
-
-}
-a{
-    line-height: 50px;
-}
-.con{
-    font-size: 30px;
-    max-width: 350px;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-a {
+/* Style the body */
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
     text-decoration: none;
-    color: black;
-   margin: auto;
-    text-align: left;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
 }
 
-
-.con2{
-    align-items: center;
-   
-    height: 320px;
-    display: inline-flex ;
-  
-   
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
 }
 
-
-
-
-.item1{
-    max-width: 100%;
-    height: auto;
-    align-items: center;
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #555;
+    color: white;
 }
 
-.about{
-    background-color: grey;
-    display: inline-flex;
-    max-width: 1050px;
-    height: 700px;
+.navbar a.active {
+    background-color: #666;
+    color: white;
 }
-img{
-    position: absolute;
-    left: 500px;
-    top: 170px;
-    width: 600px;
-    height: 500px;
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 25%;
     background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-right: 16px;
 }
-.h44{
-    font-size: 30px;
-    margin: 10px;
+
+/* Main column */
+.main {   
+    flex: 75%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile Image */
+.profile-img {
+    margin: 16px 0;
     text-align: center;
-    color: white;
 }
 
-
-.mep{
-    color: white;
-
+.profile-img img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
 }
 
+.profile-img img:hover {
+    transform: scale(1.02);
+}
+
+/* Info Items */
+.info-item {
+    background-color: #f0f0f0;
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border-left: 3px solid #666;
+    transition: background-color 0.2s ease;
+}
+
+.info-item:hover {
+    background-color: #e8e8e8;
+}
+
+.info-item strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+
+/* Skill Items */
+.skill-item {
+    background-color: #f0f0f0;
+    padding: 10px 12px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+    border: 1px solid #ddd;
+}
+
+.skill-item:hover {
+    background-color: #e0e0e0;
+    color: #222;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Project List */
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    background-color: #f8f8f8;
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border-left: 3px solid #666;
+    transition: background-color 0.2s ease;
+}
+
+.project-list li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    font-size: 18px;
+}
+
+h5 {
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    padding: 24px;
+    text-align: center;
+    background: #333;
+    color: white;
+    margin-top: 32px;
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.footer p {
+    color: #ccc;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+    
+    .side {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    
+    .header {
+        padding: 32px 16px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+}
+
+/* Student-like imperfections */
+.side {
+    margin-left: 2px;
+}
+
+.main {
+    margin-right: 1px;
+}
+
+.skill-item:nth-child(2) {
+    background-color: #e8e8e8;
+}
+
+.skill-item:nth-child(4) {
+    background-color: #f5f5f5;
+}
+
+.info-item:nth-child(3) {
+    margin-left: 2px;
+}
+
+.project-list li:nth-child(2) {
+    border-left-color: #555;
+}

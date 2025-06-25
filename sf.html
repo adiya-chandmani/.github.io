@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Science Fair</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+.process-step {
+  background-color: #eee;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-left: 5px solid #888;
+  border-radius: 6px;
+  color: #222;
+}
+.image-box {
+  background-color: #ccc;
+  height: 160px;
+  text-align: center;
+  line-height: 160px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  color: #222;
+}
+.image-caption {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #222;
+}
+body {
+  background: #fff;
+  color: #222;
+}
+.header, .footer {
+  background: #eee;
+  color: #222;
+}
+.navbar {
+  background: #ccc;
+  color: #222;
+  position: sticky;
+  top: 0;
+}
+.navbar a {
+  color: #222;
+}
+.navbar a.active, .navbar a.right {
+  background: #888;
+  color: #fff;
+}
+.main {
+  background: #f5f5f5;
+  color: #222;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.gallery-grid img:hover {
+  
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.gallery-grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-grid .image-box {
+  width: 100%;
+  min-height: 100px;
+  max-width: 100%;
+}
+.gallery-grid .image-caption {
+  text-align: center;
+  margin-bottom: 0;
+}
+/* 색상 관련 스타일은 main.css에서 일관되게 관리하세요. */
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Science Fair</h1>
+  <p>My Engineering Design Process & Progress</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Me.html">About</a>
+  <a href="project1.html">Projects</a>
+  <a href="sf.html" class="active">Science Fair</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Engineering Process</h2>
+    <div class="process-step">1. Define the problem</div>
+    <div class="process-step">2. Research and gather information</div>
+    <div class="process-step">3. Brainstorm solutions</div>
+    <div class="process-step">4. Build a prototype</div>
+    <div class="process-step">5. Test and evaluate</div>
+    <div class="process-step">6. Improve and redesign</div>
+  </div>
+  <div class="main">
+    <h2>Progress Gallery</h2>
+    <div class="gallery-grid">
+      <div>
+        <img src="picture/p1.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Building the poster')">
+      </div>
+      <div>
+        <img src="picture/p2.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Building the poster2')">
+      </div>
+      <div>
+        <img src="picture/p3.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('3d modeling decoration')">
+        
+      </div>
+      <div>
+        <img src="picture/p4.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('print the decoration')">
+        
+      </div>
+      <div>
+        <img src="picture/p5.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Attach to stage that we made')">
+        
+      </div>
+      <div>
+        <img src="picture/p6.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Make a stage for Science Fair')">
+        
+      </div>
+      <div>
+        <img src="picture/p8.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Build the robot for project')">
+        
+      </div>
+      <div>
+        <img src="picture/p9.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Print out the picture for decorate poster')">
+      </div>
+      <div>
+        <img src="picture/p10.png" alt="" style="width:300px; height:200px; object-fit:cover; border-radius:8px;" onclick="alert('Making the script')">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2025-6-25</h2>
+  <p>Created by Chandmani Adiya - ASP Student</p>
+</div>
+
+</body>
+</html>

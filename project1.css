@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar a.active {
+    background-color: #666;
+    color: white;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 25%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-right: 16px;
+}
+
+/* Main column */
+.main {   
+    flex: 75%;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Category Items */
+.category-item {
+    background-color: #f0f0f0;
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-left: 3px solid #ccc;
+}
+
+.category-item:hover {
+    background-color: #e8e8e8;
+}
+
+.category-item.active {
+    background-color: #666;
+    color: white;
+    border-left-color: #555;
+}
+
+/* Tool Items */
+.tool-item {
+    background-color: #f8f8f8;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.tool-item:hover {
+    background-color: #e0e0e0;
+    color: #222;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Project Showcase */
+.project-showcase {
+    margin: 24px 0;
+    padding: 16px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    border-left: 3px solid #666;
+    transition: background-color 0.2s ease;
+}
+
+.project-showcase:hover {
+    background-color: #f0f0f0;
+}
+
+/* Project Image */
+.project-image {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.project-image:hover img {
+    transform: scale(1.02);
+}
+
+/* Project Overlay */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.project-overlay span:hover {
+    background: white;
+    color: #333;
+}
+
+/* Project Details */
+.project-details h3 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.project-details p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Project Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag {
+    background: #666;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+    background: #555;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+h3 {
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 16px 0 8px;
+    font-size: 18px;
+}
+
+h5 {
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    padding: 24px;
+    text-align: center;
+    background: #333;
+    color: white;
+    margin-top: 32px;
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.footer p {
+    color: #ccc;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+    
+    .side {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    
+    .project-image img {
+        height: 160px;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    
+    .header {
+        padding: 32px 16px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+}
+
+/* Student-like imperfections */
+.side {
+    margin-left: 2px;
+}
+
+.main {
+    margin-right: 1px;
+}
+
+.category-item:nth-child(3) {
+    margin-left: 2px;
+}
+
+.tool-item:nth-child(2) {
+    background-color: #f0f0f0;
+}
+
+.project-showcase:nth-child(2) {
+    border-left-color: #555;
+}
+
+.project-showcase:nth-child(3) {
+    border-left-color: #444;
+}
+
+.tag:nth-child(even) {
+    background: #777;
+}
+
+.a {
+    background-color: #333;
+    
+  }
+ 
+.b {
+    background-color: #333;
+    
+  }
+.conb {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    
+  }
+.c {
+    background-color: #333;
+    
+  }
+
+img{
+    
+    background-color: whitesmoke;
+
+}
+.container :hover{
+    filter: brightness(50%);
+    cursor: pointer;
+    transition: 0.25s;
+}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+  }
+  
+  .menu {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .menu a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.35s;
+  }
+  
+  .menu a:hover {
+    background-color: #333;
+    color: white;
+  }
+.menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .item{
+    width: 525px;
+    height: 275px;
+    margin: 3px;
+    
+}
+
+.cona{
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: row;
+    
+}
+.conc{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    
+}
+p{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+   font-size: 15px;
+}
+img{
+    margin: 15px;
+    vertical-align: top;
+    height: 430px;
+    display: inline-block;
+    width: 430px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+  }
+  
+ 
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 70%;
+  }
+
+.abc{
+    
+    
+   max-width: 350px;
+   margin: 30px;
+}
+
+.content {
+  padding: auto;
+  margin: auto;
+  width: 90%;
+  font-size: 25px;
+}
+.pp{
+  font-size: 20px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Image and Description Styles */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+.image-container {
+  display: inline-block;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+/* Image Hover Effect */
+.image-container:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+img {
+  width: 300px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+.project-section {
+  margin-bottom: 40px;
+}
+.project-section h3 {
+  margin-bottom: 10px;
+}
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.project-image {
+  flex: 1 1 300px;
+  background-color: #ccc;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  color: #222;
+}
+.project-description {
+  flex: 2 1 400px;
+  color: #222;
+}
+
+/* 깔끔한 사이드바 스타일 */
+.side ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side ul li {
+  background-color: #eee;
+  margin-bottom: 8px;
+  padding: 12px 16px;
+  border-radius: 1px;
+  border-left: 4px solid #888;
+  font-weight: 500;
+  color: #222;
+  font-size: 14px;
+}
+body {
+  background: #fff;
+  color: #222;
+}
+.header, .footer {
+  background: #eee;
+  color: #222;
+}
+.navbar {
+  background: #ccc;
+  color: #222;
+  position: sticky;
+  top: 0;
+}
+.navbar a {
+  color: #222;
+}
+.navbar a.active, .navbar a.right {
+  background: #888;
+  color: #fff;
+}
+.main {
+  background: #f5f5f5;
+  color: #222;
+}
+.main img:hover{
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/* 색상 관련 스타일은 main.css에서 일관되게 관리하세요. */
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Projects</h1>
+  <p>Explore my 5 major topics</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Me.html">About</a>
+  <a href="project1.html" class="active">Projects</a>
+  <a href="sf.html">Science Fair</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Topics</h2>
+    <ul>
+      <li>VEX VR Robotics</li>
+      <li>VEX EXP Robotic</li>
+      <li>Introduction to Python</li>
+      <li>OnShape CAD</li>
+      <li>micro:bit</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="project-section">
+      <h3>VEX VR Robotics</h3>
+      <div class="project-content">
+        <a href="vexVr.html"><img src="picture/vexvr.png" alt="VEX VR Robotics" height="200px" width="380px"; style="display:block; margin:0 auto 8px auto; object-fit:cover; border-radius:8px;"></a>
+        <div class="project-description">
+          <p style="word-wrap: break-word; white-space: normal;">In my VEX VR project, I used block coding to program a robot to solve mazes and sort colored disks. I learned to use loops and if-statements to make it work smartly.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <h3>VEX EXP Robotic</h3>
+      <div class="project-content">
+        <a href="vexExp.html"><img src="picture/vexrobot.png" alt="VEX VR Robotics" height="200px" width="380px"; style="display:block; margin:0 auto 8px auto; object-fit:cover; border-radius:8px;"></a>
+        <div class="project-description">
+          <p>In my VEX EXP project, I built and programmed a robot to pick up and move balls. I used VEXcode to control its movement, arm, and sensors. I learned how to combine hardware and coding to solve tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <h3>Introduction to Python</h3>
+      <div class="project-content">
+        <a href="pythontt.html"><img src="picture/pythontt.png" alt="VEX VR Robotics" height="200px" width="380px"; style="display:block; margin:0 auto 8px auto; object-fit:cover; border-radius:8px;"></a>
+        <div class="project-description">
+          <p>I learned Python basics like variables, loops, and functions. I made small projects like a guessing game and calculator, which helped me understand how coding and real programs work.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <h3>OnShape CAD</h3>
+      <div class="project-content">
+        <a href="onCad.html"><img src="picture/onshapecad.png" alt="VEX VR Robotics" height="200px" width="380px"; style="display:block; margin:0 auto 8px auto; object-fit:cover; border-radius:8px;"></a>
+        <div class="project-description">
+          <p>I used OnShape CAD to design 3D parts like gears and brackets. I learned to sketch, extrude, and add constraints. I built a working gear system and learned the design process from planning to improving.</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-section">
+      <h3>micro:bit</h3>
+      <div class="project-content">
+       <a href="micro.html"><img src="picture/mircobit.png" alt="VEX VR Robotics" height="200px" width="380px"; style="display:block; margin:0 auto 8px auto; object-fit:cover; border-radius:8px;"></a>
+        <div class="project-description">
+          <p>I used micro:bit to make a simple game with LEDs, buttons, and motion sensors. One project was a rock-paper-scissors game that reacted when I shook it. I learned how to use sensors to create interactive devices.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2025-6-25</h2>
+  <p>Created by Chandmani Adiya - ASP Student</p>
+</div>
+
+</body>
+</html>

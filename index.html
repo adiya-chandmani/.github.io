@@ -1,39 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-    <title>CHANDMANI</title>
+<title>Portfolio Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<style>
+body {
+  background: #fff;
+  color: #222;
+}
+.header, .footer {
+  background: #eee;
+  color: #222;
+}
+.navbar {
+  background: #ccc;
+  color: #222;
+  position: sticky;
+  top: 0;
+}
+.navbar a {
+  color: #222;
+}
+.navbar a.active, .navbar a.right {
+  background: #888;
+  color: #fff;
+}
+.side, .main {
+  background: #f5f5f5;
+  color: #222;
+}
+.fakeimg {
+  background: #ccc;
+  color: #222;
+}
+/* 색상 관련 스타일은 main.css에서 일관되게 관리하세요. */
+</style>
 </head>
 <body>
-  
-    <div class="con2">
-     
-    <div class="con">
-        
-       <div class="a"><h3>CHADNAMNI</h3><h3>ADIYA</h3></div>
-         
-    
 
-        <a href="index.html">ㅤㅤㅤㅤPORTFOLIOㅤㅤㅤ</a>
-       <a href="Me.html">ㅤㅤㅤㅤABOUT MEㅤㅤㅤ</a>
-        <a href="Pro.html">ㅤㅤㅤㅤPROJECTㅤㅤㅤㅤ</a>
-    </div>
+<div class="header">
+  <h1>CHANDMANI ADIYA</h1>
+  <p>Welcome to my portfolio</p>
 </div>
 
-<div class="pic">
-    <img class="item" src="picture/ASP.png" alt="" >
-    <img class="item" src="picture/ASP1.jpeg" alt="" >
-    <img class="item" src="picture/ASP3.webp" alt="" >  
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="Me.html">About</a>
+  <a href="project1.html">Projects</a>
+  <a href="sf.html">Science Fair</a>
 </div>
-<div class="pic2">
-    <img class="item" src="picture/ASP4.webp" alt="" >
-    <img class="item" src="picture/ASP5.jpeg" alt="" >
-    <img class="item" src="picture/ASP6.jpg" alt="" >  
+
+<div class="row">
+  <div class="side">
+    <h2>School</h2>
+    <h5>School Photo:</h5>
+    <img src="picture/ASPA.png" alt="School Photo" style="height:120px; width:auto; display:block; margin:0 auto 8px auto; object-fit:fill; max-width:100%;">
+    <p>International School of Korea</p>
+    <h3>Grade</h3>
+    <p>Grade 10</p>
+    <h3>About School</h3>
+    <p>A leading international school in Korea, focused on academic excellence and global citizenship.</p>
+  </div>
+  <div class="main">
+    <h2>Featured Projects</h2>
+    <h5>2024 Projects Overview</h5>
+    <img src="picture/fproject.png" alt="featured project" style="width:100%; height:300px; display:block; margin:0 auto 8px auto; object-fit:cover; object-position:80% center; border-radius:8px;">
+    <p>This is a recreated page in example.html style. Original design removed.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2025-6-25</h2>
+  <p>Created by Chandmani Adiya - ASP Student</p>
 </div>
 
 </body>
